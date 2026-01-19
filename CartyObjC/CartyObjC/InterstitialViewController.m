@@ -43,7 +43,7 @@
 }
 
 - (void)CTInterstitialAdDidLoad:(nonnull CTInterstitialAd *)ad {
-    NSLog(@"interstitialAdDidLoad");
+    self.infoLabel.text= @"Ad loaded";
 }
 
 - (void)CTInterstitialAdDidShow:(nonnull CTInterstitialAd *)ad { 

@@ -157,7 +157,6 @@
 				DEVELOPMENT_TEAM = GU3336MZ8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CartySwift/Info.plist;
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow AD tracking, you can see more suitable ads.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -192,7 +191,6 @@
 				DEVELOPMENT_TEAM = GU3336MZ8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CartySwift/Info.plist;
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow AD tracking, you can see more suitable ads.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

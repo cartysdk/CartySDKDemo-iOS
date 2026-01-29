@@ -229,7 +229,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CartyObjC/Info.plist;
 				INFOPLIST_KEY_MetalCaptureEnabled = NO;
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow AD tracking, you can see more suitable ads.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -269,7 +268,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CartyObjC/Info.plist;
 				INFOPLIST_KEY_MetalCaptureEnabled = NO;
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow AD tracking, you can see more suitable ads.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

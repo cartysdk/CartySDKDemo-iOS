@@ -6,6 +6,6 @@ target 'CartyObjC' do
   use_frameworks!
   
   # Pods for CartyObjC
-  pod "CartySDK"
+  pod "CartySDK","0.7.0"
   
 end

@@ -1,13 +1,13 @@
 {
-  "originHash" : "26bc5fd0648417a6ecd821e2f2e65a31ed7a708c88e6653d4b4a47a0310d9ad1",
+  "originHash" : "e0a1320c892af914c12f380bc53898b922d4423501f37953af2704387a5e28bd",
   "pins" : [
     {
       "identity" : "carty-swift-package-manager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cartysdk/Carty-swift-package-manager",
       "state" : {
-        "revision" : "56b718fc791e44aa402333744e02c38e71836579",
-        "version" : "0.7.0"
+        "revision" : "92f3fae674d8504c115ca41ae9a6bbb201aceef2",
+        "version" : "1.0.0"
       }
     }
   ],

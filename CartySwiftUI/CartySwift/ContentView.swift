@@ -35,6 +35,10 @@ struct ContentView: View {
                 {
                     Text("Open")
                 }
+                NavigationLink(destination: NativeTemplateContentView())
+                {
+                    Text("Native Template")
+                }
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in

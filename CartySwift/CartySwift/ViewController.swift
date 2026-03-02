@@ -23,5 +23,13 @@ class ViewController: UITableViewController
         super.viewDidLoad()
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "template")
+        {
+            let nativeViewController:NativeViewController = segue.destination as! NativeViewController;
+            nativeViewController.isTemplate = true;
+        }
+    }
 }
 

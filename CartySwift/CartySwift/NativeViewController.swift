@@ -10,6 +10,7 @@ import CartySDK
 
 class NativeViewController: UIViewController, CTNativeAdDelegate
 {
+    public var isTemplate:Bool = false;
     @IBOutlet var infoLabel:UILabel?
     @IBOutlet var adView:UIView?
     let nativeAd = CTNativeAd()
@@ -18,7 +19,14 @@ class NativeViewController: UIViewController, CTNativeAdDelegate
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        nativeAd.placementid = "281217152610"
+        if(isTemplate)
+        {
+            nativeAd.placementid = "281217152611"
+        }
+        else
+        {
+            nativeAd.placementid = "281217152610"
+        }
         nativeAd.rootViewController = self
         nativeAd.delegate = self
     }
@@ -41,6 +49,14 @@ class NativeViewController: UIViewController, CTNativeAdDelegate
         if(nativeView != nil)
         {
             nativeView?.removeFromSuperview()
+        }
+        //native Template
+        if(nativeAd.isTemplate)
+        {
+            adView?.addSubview(nativeAd.templateView!)
+            setFullLayOut(view: nativeAd.templateView!)
+            nativeAd.registerContainer(nativeAd.templateView!, withClickableViews: nil)
+            return;
         }
         nativeView = (Bundle.main.loadNibNamed(
             "NativeTemplate",

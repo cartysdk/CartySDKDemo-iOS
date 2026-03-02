@@ -14,13 +14,23 @@ class NativeController:NSObject,CTNativeAdDelegate,ObservableObject
 {
     @Published var infoText:String = ""
     @Published var canShow:Bool = false
+    var isTemplate:Bool = false;
     var iconImage:UIImage = UIImage()
-    let nativeAd = CTNativeAd()
+    var nativeAd:CTNativeAd = CTNativeAd();
     
-    override init() {
-        super.init();
-        nativeAd.placementid = "281217152610"
+    func setup()
+    {
+        nativeAd = CTNativeAd();
+        if(isTemplate)
+        {
+            nativeAd.placementid = "281217152611"
+        }
+        else
+        {
+            nativeAd.placementid = "281217152610"
+        }
         nativeAd.delegate = self
+        canShow = false;
     }
     
     func loadAd()
@@ -29,16 +39,18 @@ class NativeController:NSObject,CTNativeAdDelegate,ObservableObject
         nativeAd.load();
     }
     
-    func showAd()
+    func showAd() -> Bool
     {
         if(nativeAd.isReady())
         {
             infoText = "Start show Ad"
-            canShow = true;
+            canShow = true
+            return true
         }
         else
         {
             infoText = "Ad not Ready"
+            return false
         }
     }
     

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F5802CC2F04F5BC007FBFD9 /* CartySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5802CB2F04F5BC007FBFD9 /* CartySDK */; };
+		7FB3AF612F5536F0001F682F /* CartySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB3AF602F5536F0001F682F /* CartySDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5802CC2F04F5BC007FBFD9 /* CartySDK in Frameworks */,
+				7FB3AF612F5536F0001F682F /* CartySDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = CartySwiftUI;
 			packageProductDependencies = (
-				7F5802CB2F04F5BC007FBFD9 /* CartySDK */,
+				7FB3AF602F5536F0001F682F /* CartySDK */,
 			);
 			productName = CartySwiftUI;
 			productReference = 7F5802BC2F04F4E0007FBFD9 /* CartySwift.app */;
@@ -114,7 +114,7 @@
 			mainGroup = 7F5802B32F04F4E0007FBFD9;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				7F5802CA2F04F5BC007FBFD9 /* XCRemoteSwiftPackageReference "Carty-swift-package-manager" */,
+				7FB3AF5F2F5536F0001F682F /* XCRemoteSwiftPackageReference "Carty-swift-package-manager" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7F5802BD2F04F4E0007FBFD9 /* Products */;
@@ -275,12 +275,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GU3336MZ8P;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 946RL9YMG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CartySwift/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow AD tracking, you can see more suitable ads.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,9 +295,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CT.CartyDemo.SwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carty.spp.swiftui.demo;
 				PRODUCT_MODULE_NAME = CartySwift;
 				PRODUCT_NAME = CartySwift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sspwildcard;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -310,12 +315,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GU3336MZ8P;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 946RL9YMG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CartySwift/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow AD tracking, you can see more suitable ads.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,9 +335,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CT.CartyDemo.SwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carty.spp.swiftui.demo;
 				PRODUCT_MODULE_NAME = CartySwift;
 				PRODUCT_NAME = CartySwift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sspwildcard;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -364,20 +374,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7F5802CA2F04F5BC007FBFD9 /* XCRemoteSwiftPackageReference "Carty-swift-package-manager" */ = {
+		7FB3AF5F2F5536F0001F682F /* XCRemoteSwiftPackageReference "Carty-swift-package-manager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/cartysdk/Carty-swift-package-manager";
+			repositoryURL = "https://github.com/cartysdk/Carty-swift-package-manager.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7F5802CB2F04F5BC007FBFD9 /* CartySDK */ = {
+		7FB3AF602F5536F0001F682F /* CartySDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7F5802CA2F04F5BC007FBFD9 /* XCRemoteSwiftPackageReference "Carty-swift-package-manager" */;
+			package = 7FB3AF5F2F5536F0001F682F /* XCRemoteSwiftPackageReference "Carty-swift-package-manager" */;
 			productName = CartySDK;
 		};
 /* End XCSwiftPackageProductDependency section */

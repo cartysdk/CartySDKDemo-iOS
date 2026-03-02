@@ -1,5 +1,5 @@
 //
-//  NativeContentView.swift
+//  NativeTemplateContentView.swift
 //  CartySwift
 //
 //  Created by GZTD-03-01959 on 2025/12/31.
@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-struct NativeContentView: View
+struct NativeTemplateContentView: View
 {
     @ObservedObject var nativeController = NativeController();
     @State private var updateIndex:Int = 0
-    
     
     var body: some View {
         VStack(spacing: 20)
@@ -52,6 +51,7 @@ struct NativeContentView: View
         .navigationTitle("Native")
         .onAppear()
         {
+            nativeController.isTemplate = true;
             nativeController.setup()
         }
         .onDisappear()

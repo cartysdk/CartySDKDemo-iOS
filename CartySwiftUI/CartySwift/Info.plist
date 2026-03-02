@@ -7,7 +7,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>Please allow AD tracking, you can see more suitable ads.</string>
 </dict>
 </plist>

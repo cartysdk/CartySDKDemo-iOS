@@ -23,7 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.nativeAd = [[CTNativeAd alloc] init];
-    self.nativeAd.placementid = @"281217152610";
+    if(self.isTemplate)
+    {
+        self.nativeAd.placementid = @"281217152611";
+    }
+    else
+    {
+        self.nativeAd.placementid = @"281217152610";
+    }
     self.nativeAd.rootViewController = self;
     self.nativeAd.delegate = self;
 }
@@ -45,6 +52,14 @@
     if(self.nativeView != nil)
     {
         [self.nativeView removeFromSuperview];
+    }
+    //native Template
+    if(self.nativeAd.isTemplate)
+    {
+        [self.adView addSubview:self.nativeAd.templateView];
+        [self setFullLayOut:self.nativeAd.templateView];
+        [self.nativeAd registerContainer:self.nativeAd.templateView withClickableViews:nil];
+        return;
     }
     self.nativeView = [[NSBundle mainBundle] loadNibNamed:@"NativeTemplate" owner:self options:nil].lastObject;
     [self.adView addSubview:self.nativeView];

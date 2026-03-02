@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import "NativeViewController.h"
 
 @interface ViewController ()
 
@@ -30,5 +31,14 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"template"])
+    {
+        NativeViewController *nativeViewController = [segue destinationViewController];
+        nativeViewController.isTemplate = YES;
+    }
+    
+}
 
 @end

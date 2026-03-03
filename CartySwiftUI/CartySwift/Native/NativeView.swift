@@ -19,7 +19,7 @@ struct NativeView: UIViewRepresentable
     func makeUIView(context: Context) -> UIView{
         if(nativeController.nativeAd.isTemplate)
         {
-            return nativeController.nativeAd.templateView!
+            return UIView();
         }
         else
         {
@@ -35,6 +35,8 @@ struct NativeView: UIViewRepresentable
         let nativeAd = nativeController.nativeAd;
         if(nativeAd.isTemplate)
         {
+            uiView.addSubview(nativeController.nativeAd.templateView!);
+            setFullLayOut(view: nativeController.nativeAd.templateView!);
             nativeAd.registerContainer(nativeAd.templateView!, withClickableViews: nil)
             return
         }

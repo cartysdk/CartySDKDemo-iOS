@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct BannerContentView: View {
-    let bannerView = BannerView();
+    let bannerView = BannerView()
+    @ObservedObject var bannerController:BannerController
+    init()
+    {
+        bannerController = bannerView.bannerController
+    }
     var body: some View {
-        @ObservedObject var bannerController = bannerView.bannerController;
         VStack(spacing: 20)
         {
             bannerView.frame(width: 320,height: 50)
@@ -25,6 +29,10 @@ struct BannerContentView: View {
             
         }
         .navigationTitle("Banner")
+        .onDisappear()
+        {
+            bannerController.infoText = "";
+        }
     }
 }
 

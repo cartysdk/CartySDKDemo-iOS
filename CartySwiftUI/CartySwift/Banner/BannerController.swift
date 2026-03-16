@@ -12,7 +12,7 @@ import SwiftUI
 
 class BannerController:NSObject,CTBannerAdDelegate,ObservableObject
 {
-    @Published var infoText:String = "";
+    @Published var infoText:String = ""
     let bannerAd = CTBannerAd()
     override init() {
         super.init();

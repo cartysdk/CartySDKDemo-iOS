@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cartysdk/Carty-swift-package-manager.git",
       "state" : {
-        "revision" : "4370abea7779b3b5bdd0a9ebe54a5425ff10b571",
-        "version" : "1.8.0"
+        "revision" : "6a8ef3458d55874f2a180c24478a225d91311b98",
+        "version" : "1.9.0"
       }
     }
   ],
